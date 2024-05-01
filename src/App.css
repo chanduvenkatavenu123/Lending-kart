@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 40px;
+}
+
+.section1 {
+  width: 75%;
+  height: 40%;
+  position: relative;
+}
+
+#section2 {
+  width: 35%;
+  min-Height: 50%;
+  display: flex;
+  flex-Direction: column;
+  z-Index: 10;
+  position: absolute;
+  right: 90px;
+  border: 2px solid white;
+  background: white;
+  top: 100px
+}
+
+.formelements {
+  width: 100% !important;
+  margin: 10px !important;
+}
+
+.Navbar {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  justify-content: space-between;
+  padding: .5% 1.5% 0px 1.5%;
+}
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background-color: rgba(48, 48, 48, 0.24);
+}
+
+.navRight {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hambergerMenu {
+  display: flex;
+  justify-content: flex-start;
+  color:black
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+
+/* 
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .navRight {
+    width: 45%;
+  }
+
+  .main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0 !important;
+  }
+
+  .section1 {
+    min-width: 100% !important;
+    min-height: 50% !important;
+    border-radius: 0 !important;
+
+  }
+
+  #img {
+    border-radius: 0;
+  }
+  #section2::before {
+    content: "Bussiness Loan Application Form";
+    font-size: 20px;
+    left: 20px;
+    top: 100px;
+  }
+
+  #section2 {
+    margin-top: 100px;
+    width: 60% !important;
+    position: initial !important;
+    z-index: 0 !important;
+
+  }
+
+  .formelements {
+    margin-right: 0px !important;
+  }
+
+  .formclass {
+    border: none !important;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    width: 100vw !important;
+    width: 550% !important;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img {
+    width: 100vw !important;
+    height: 250px !important;
+    top: 100px !important;
+    border-radius: 0px !important;
+   
+  }
+  #textdata {
+    width: 21% !important;
+    top: 135px;
+    font-size: 13px;
+    height: 34vh;
+    line-height: initial;
+    border-top-right-radius: 72px;
+    border-bottom-right-radius: 72px;
+  }
+  #h2data{
+    position: relative;
+    font-size: 16px;
+    bottom: 5px;
+  }
+  .tickmarktext h3{
+    font-size: 14px !important;
+    
+  }
+
+  #section2 {
+    top: 500px !important;
+    width: 100% !important ;
+    left: 8px;
+  }
+
+
+  #section2::before {
+    content: "Bussiness Loan Application Form";
+    font-size: 18px;
+    right: -18px;
+  }
+  .formelements{
+    font-size:small;
+  }
+  .hambergerMenu{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    margin-right: 10px;
+  }
+  .logo{
+    width: 110px;
+  }
+  .btn{
+    justify-content: end;
+    font-size: 13px;
+    border-radius: 15px;
+  }
+  .navRight button:first-child {
+    display: none;
+  }
+
+  .navRight span {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #img {
+    width: 100vw !important;
+    width: 500px !important;
+    height: 35vh !important;
+    border-radius: 0px !important;
+    position: absolute !important;
+    top: 5px !important;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 500px !important;
+  }
+
+  .section1 {
+    position: relative;
+    width: 100%;
+  }
+
+  #textdata {
+    position: relative;
+    top: 120px;
+    
+    margin-top: 20px;
+    font-size: 15px;
+    height: 37vh;
+    width: 428px !important;
+    border-top-right-radius: 73px;
+    border-bottom-right-radius: 73px;
+    font-size: .8rem !important;
+    line-height: 20px;
+  }
+
+  #h2data {
+    font-size: large;
+    margin-bottom: 10px;
+  }
+
+  #section2 {
+    position: relative;
+    width: 100vw !important;
+    top: 485px !important;
+    right: -10px !important;
+    background: transparent;
+  }
+
+  #section2::before {
+    content: "Bussiness Loan Application Form";
+    font-size: 23px;
+    right: -13px;
+  }
+
+  .navRight button:first-child {
+    display: none;
+  }
+
+  .navRight span {
+    display: none !important;
+  }
+
+  .navRight {
+    display: flex;
+  }
+
+  .navRight button:last-child {
+    position: relative;
+    right: -100px;
+  }
+
+  .formelements {
+    font-size: 3px;
+  }
+
+  #decleration {
+    font-size: small !important;
+  }
+
+  #btn {
+    font-size: initial;
+  } 
+} */
+
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .main{
+    width: 100vw !important;
+    padding-left: 1px !important;    
+  }
+  .hambergerMenu{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    margin-right: 10px;
+  }
+  .logo{
+    width: 100px;
+  }
+
+  .navRight button:first-child {
+    display: none;
+  }
+
+  .navRight span {
+    display: none !important;
+  }
+
+  .navRight {
+    display: flex;
+  }
+
+  .navRight button:last-child {
+    width: 50%;
+    height: 55%;
+    position: relative;
+    right: -45px;
+    border-radius: 50%;
+  }
+
+  #img{
+    min-width: 144%;    
+    height: 300px !important;
+    border-radius: 0px !important;
+  }
+  #textdata{
+    min-width: 122% !important;
+    height: max-content;
+    font-size: 13px !important;
+    top: 160px;
+    line-height: inherit;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+  }
+  #h2data{
+    font-size: large;
+  }
+  .tickmarktext{
+    margin-top: 2%;
+  }
+  #section2::before {
+    width:max-content !important;
+    content: "Bussiness Loan Application Form";
+    font-size: 1.5;
+    font-weight: 500;
+    left: 12%;
+  }
+#section2{
+  min-width: 40%; 
+  position: relative;
+  left: 20px;
+  top: 592px !important;  
+}
+.formclass{
+  width: 190%;
+}
+}
+#decleration {
+  font-size:smaller;
+}
+
+#btn {
+  font-size: initial;
+}
